@@ -1,7 +1,7 @@
 
 <div class="cent">
     <h1><i class="fas fa-user"></i>&nbsp;&nbsp;Login</h1>
-    <form method="POST" action="./member/login">
+    <form method="POST" action="/wargame/member/login">
         <div class="form-group">
             <label>ID</label>
             <input type="text" name="id" class="form-control" placeholder="ID">

@@ -1,14 +1,22 @@
 
 <div class="cent">
     <h1><i class="fas fa-address-card"></i>&nbsp;&nbsp;Join</h1>
-    <form method="POST" action="./member/login">
+    <form method="POST" action="./member/join">
         <div class="form-group">
             <label>ID</label>
-            <input type="text" name="id" class="form-control" placeholder="ID">
+            <input type="text" name="id" class="form-control" placeholder="5~10 글자, 알파벳 소문자와 숫자로 이루어져야함" required>
         </div>
         <div class="form-group">
             <label>PW</label>
-            <input type="password" name="pw" class="form-control" placeholder="PW">
+            <input type="password" name="pw" class="form-control" placeholder="5~15 글자, 알파벳이나 숫자, 특수문자(!@_*) 로 이루어져야함" required>
+        </div>
+        <div class="form-group">
+            <label>EMAIL</label>
+            <input type="email" name="email" class="form-control" placeholder="자신의 이메일을 적어주세요" required>
+        </div>
+        <div class="form-group">
+            <label>Homepage</label>
+            <input type="text" name="homepage" class="form-control" placeholder="자신의 홈페이지나 블로그의 주소를 적어주세요 (선택) http(s)://example.com">
         </div>
         <button type="submit" class="btn btn-dark">Join</button>
     </form>
