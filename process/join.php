@@ -1,5 +1,5 @@
 <?php
-    include_once('../config.php');
+    require('../config.php');
     //값 받아오기
     $usrid = $_POST['id'];
     $usrpw = $_POST['pw'];

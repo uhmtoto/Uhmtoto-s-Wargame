@@ -1,6 +1,5 @@
 <?php
-	session_start();
-	require_once('../onlydb.php');
+	require('../config.php');
 
 	$usrflag = $_POST['flag'];
     $query = "SELECT * FROM `war_problems` WHERE `flag` = '$usrflag'";
