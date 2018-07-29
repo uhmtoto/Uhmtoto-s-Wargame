@@ -1,3 +1,3 @@
 <?php
-    header('Location: /wargame/member/logout');
+    header('Location: /wargame/process/logout');
 ?>
