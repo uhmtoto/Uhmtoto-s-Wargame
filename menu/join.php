@@ -1,5 +1,5 @@
 
-<div class="cent">
+<div class="center">
     <h1><i class="fas fa-address-card"></i>&nbsp;&nbsp;Join</h1><br>
     <form method="POST" action="./process/join">
         <div class="form-group">

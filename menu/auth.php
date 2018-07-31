@@ -1,5 +1,5 @@
 
-<div class="cent">
+<div class="center">
     <?php
         if(!isset($_SESSION['warid'])) {
             echo ("<h1>Login First!</h1>");

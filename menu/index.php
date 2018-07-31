@@ -1,5 +1,5 @@
 <div class="content">
-    <div class="mainmenu" id="notice">
+    <div class="front" id="notice">
         <h3>Notice</h3>
         <?php
             $query = "SELECT * FROM `war_notice` ORDER BY `top` DESC, `date` ASC";
@@ -9,7 +9,7 @@
             }
         ?>
     </div>
-    <div class="mainmenu" id="top3">
+    <div class="front" id="top3">
         <h3>Top 3</h3>
         <?php
             $query = "SELECT * FROM `war_users` ORDER BY `point` DESC LIMIT 3";

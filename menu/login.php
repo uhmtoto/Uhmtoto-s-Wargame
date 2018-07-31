@@ -1,5 +1,5 @@
 
-<div class="cent">
+<div class="center">
     <h1><i class="fas fa-user"></i>&nbsp;&nbsp;Login</h1><br>
     <form method="POST" action="./process/login">
         <div class="form-group">
