@@ -9,10 +9,11 @@
             }
         ?>
     </div>
+    <script src="/wargame/data/ez.js"></script>
     <div class="front" id="top3">
         <h3>Top 3</h3>
         <?php
-            $query = "SELECT * FROM `war_users` ORDER BY `point` DESC LIMIT 3";
+            $query = "SELECT * FROM `war_users` WHERE `id` != 'admin' ORDER BY `point` DESC LIMIT 3";
             $res = mysql_query($query, $conn);
             for ($i=1; $row = mysql_fetch_array($res); $i++) {
                 echo "<p>";
