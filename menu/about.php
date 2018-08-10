@@ -1,7 +1,7 @@
 
 <div class="big_content">
     <h2>누가 이 워게임을 개발했나요?</h2>
-    <p><a href="/">uhmtoto</a>가 만든 워게임 사이트로, 점차 문제들을 늘려나갈 예정입니다.</p>
+    <p><a href="/">uhmtoto</a>가 만든 워게임 사이트입니다.</p>
 </div>
 <div class="big_content">
     <h2>이 사이트는 안전한가요?</h2>
