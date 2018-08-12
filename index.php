@@ -6,7 +6,7 @@
     
     <body class="bg-light">
         <?php
-            require_once 'header.php';
+            require_once ('header.php');
             $_menu = str_replace('/wargame/', '', $_SERVER['REQUEST_URI']);
             if($_menu == '') $_menu = 'index';
             if(substr($_menu, 0, 4) == 'user') {
