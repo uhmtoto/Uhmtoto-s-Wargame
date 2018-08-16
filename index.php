@@ -6,11 +6,12 @@
     
     <body class="bg-light">
         <?php
-            require_once ('header.php');
-            $_menu = str_replace('/wargame/', '', $_SERVER['REQUEST_URI']);
+            require_once('header.php');
+            //echo($_SERVER['REQUEST_URI']);
+            $_menu = str_replace('/', '', $_SERVER['REQUEST_URI']);
             if($_menu == '') $_menu = 'index';
             if(substr($_menu, 0, 4) == 'user') {
-                $usrid = substr($_menu, 5);
+                $usrid = substr($_menu, 4);
                 $_GET['id']=$usrid;
                 require_once ('./menu/user.php');
             }

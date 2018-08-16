@@ -4,11 +4,11 @@
     <div class="card-columns">
         <?php
             $usrid = $_SESSION['warid'];
-            $query = "SELECT * FROM `war_problems`";
+            $query = "SELECT * FROM `problems`";
             $res = mysql_query($query);
             while ($row = mysql_fetch_array($res)) {
                 $code = (string)$row['code'];
-                $query = "SELECT * FROM `war_solvers` WHERE `usrid` = '$usrid' and `probcode` = $code";
+                $query = "SELECT * FROM `solvers` WHERE `usrid` = '$usrid' and `probcode` = $code";
                 if(mysql_num_rows(mysql_query($query, $conn))) $sflag=1;
                 else $sflag=0;
                 echo '<div class="card">';

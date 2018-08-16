@@ -21,7 +21,7 @@
     }
 
     //아이디 중복 확인
-    $query = "SELECT * FROM `war_users` WHERE `id` = '$usrid'";
+    $query = "SELECT * FROM `users` WHERE `id` = '$usrid'";
     $res = mysql_query($query, $conn);
     if(mysql_num_rows($res) > 0) {
         echo("<script>alert(\"이미 해당 아이디가 있습니다!\");history.back();</script>");
@@ -40,7 +40,7 @@
     $usrpw = hash('sha256', $usrpw.$salt);
     
     //쿼리
-    $query = "INSERT INTO `war_users`(`id`, `pw`, `salt`, `email`, `homepage`, `point`) 
+    $query = "INSERT INTO `users`(`id`, `pw`, `salt`, `email`, `homepage`, `point`) 
     VALUES ('$usrid', '$usrpw', '$salt', '$usrmail', '$usrpage', 0)";
     if(mysql_query($query, $conn)) {
         echo("<script>alert(\"회원가입을 성공했습니다!\");location.href=\"/wargame\"</script>");

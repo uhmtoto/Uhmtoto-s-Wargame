@@ -1,7 +1,7 @@
 
 <div class="center">
     <h1><i class="fas fa-address-card"></i>&nbsp;&nbsp;Join</h1><br>
-    <form method="POST" action="./process/join">
+    <form method="POST" action="/process/join">
         <div class="form-group">
             <label>ID</label>
             <input type="text" name="id" class="form-control" placeholder="5~10 글자, 알파벳 소문자와 숫자로 이루어져야함" required>

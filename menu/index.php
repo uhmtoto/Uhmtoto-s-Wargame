@@ -2,7 +2,7 @@
     <div class="front" id="notice">
         <h3>Notice</h3>
         <?php
-            $query = "SELECT * FROM `war_notice` ORDER BY `top` DESC, `date` ASC";
+            $query = "SELECT * FROM `notice` ORDER BY `top` DESC, `date` ASC";
             $res = mysql_query($query, $conn);
             while ($row = mysql_fetch_array($res)) {
                 echo ("<p>".$row['content']."<br>".$row['date']."</p>");
@@ -13,7 +13,7 @@
     <div class="front" id="top3">
         <h3>Top 3</h3>
         <?php
-            $query = "SELECT * FROM `war_users` WHERE `id` != 'admin' ORDER BY `point` DESC LIMIT 3";
+            $query = "SELECT * FROM `users` WHERE `id` != 'admin' ORDER BY `point` DESC LIMIT 3";
             $res = mysql_query($query, $conn);
             for ($i=1; $row = mysql_fetch_array($res); $i++) {
                 echo "<p>";

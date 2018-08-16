@@ -11,7 +11,7 @@
         exit();
     }
     
-    $query = "SELECT * FROM `war_users` WHERE `id` = '$usrid'";
+    $query = "SELECT * FROM `users` WHERE `id` = '$usrid'";
     $res = mysql_query($query, $conn);
     if(mysql_num_rows($res) == 0) {
         echo ("<script>alert(\"일치하는 계정이 없습니다!\");history.back();</script>");
@@ -21,7 +21,7 @@
     $salt = $res['salt'];
     $usrpw = hash('sha256', $usrpw.$salt);
 
-    $query = "SELECT * FROM `war_users` WHERE `id` = '$usrid' and `pw` = '$usrpw'";
+    $query = "SELECT * FROM `users` WHERE `id` = '$usrid' and `pw` = '$usrpw'";
     $res = mysql_query($query, $conn);
     if(mysql_num_rows($res) > 0) {
         $_SESSION['id'] = $usrid;
